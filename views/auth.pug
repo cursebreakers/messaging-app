@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  div.header
+    h1 Log in
+  div.authBox
+    form#login.authForm(action="#")
+      input(type="text" name="username" placeholder="Username")
+      input(type="password" name="password" placeholder="Password")
+      button(type="submit") Log in
+    a.signup(href="/auth/new") Sign up
+  div.footBar
+    a.docLink(href="/docs") README.md

@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  div#proHead
+    h2#userTag= user.username
+    a#connectLink Connect
+  div.profile
+    p= user.status
+    p= user.bio
+    a(href=user.link)= user.link
+  a.homeLink(href="/") Home
+  

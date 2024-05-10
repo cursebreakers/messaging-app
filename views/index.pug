@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  div.header
+    a.profileLink(href=`/${userObjects.username}`) #{userObjects.username}
+    a.statusLink(href="/settings") settings
+  div#dashboard
+    p.inboxTitle Inbox
+    div.inBox
+      if userObjects.inbox.length > 0
+        each thread in userObjects.inbox
+          a.inboxThread(href=`/thread/${thread._id}`) #{thread.party[0].username} x #{thread.party[1].username}
+      else
+        p No messages
+
+  div.footBar
+    a.docLink(href="/docs") README.md
+    a#logOut Log out

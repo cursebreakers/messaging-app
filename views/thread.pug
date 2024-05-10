@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  div.threader
+    each party in thread.party
+      if party.username !== user.username
+        a.partyHead(href=`/${party.username}`) #{party.username}
+    a.closeMess(href="/") X
+  div#thread
+    div.threadBox
+      each message in thread.messages
+        div.threadMessage
+          p.author #{message.author}
+          p.content #{message.content}
+          p.timestamp #{message.timestamp}
+
+      if thread.messages.length === 0
+        p No messages
+  div.messBar
+    form#messageControl(action='#')
+      input#threadId(type='hidden' name='threadId' value=`${thread._id}`)
+      input#messageContent(class="autoExpand" type='text' name='messageContent' placeholder='Type your message...')
+      button(type='submit') Send
+

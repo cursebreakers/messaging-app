@@ -1,0 +1,341 @@
+body {
+  font: 18px monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  max-width: 100vw;
+}
+
+a {
+  color: #00B7FF;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: aquamarine;
+}
+
+.header > a {
+  text-align: center;
+  color: #111111;
+  padding: 12px;
+  margin: 0;
+  width: 100%;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.header > a:hover {
+  background-color: #111111;
+  color: azure;
+}
+
+.authBox {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.authForm {
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+  margin: 18px;
+  border: 2px ridge #111111;
+}
+
+.authForm > input {
+  margin: 8px;
+  font-size: 16px;
+  padding: 4px;
+}
+
+.authForm > button {
+  margin: 8px;
+  font-size: 16px;
+  padding: 4px;
+}
+
+.signup {
+  padding: 12px;
+}
+
+#errorDiv {
+  font-size: 14px;
+  color: red;
+}
+
+#dashboard {
+  flex: 1 1 auto;
+  margin: 0;
+  width: 100%;
+  background-color: #111111;
+  color: azure;
+  margin-bottom: 58px;
+}
+
+.cancel {
+  color: red;
+}
+
+.inboxTitle {
+  padding: 4px;
+  margin-left: 4px;
+  font-size: 28px;
+}
+
+.inBox {
+  display: flex;
+  flex-direction: column-reverse;
+  flex: 1 1 auto;
+  border: 4px ridge #111;
+  background-color: #111111;
+  margin-bottom: 58px;
+}
+
+.inboxThread {
+  font-size: 20px;
+  padding: 14px;
+  border: 4px ridge #111;
+  color: azure;
+}
+
+.inboxThread:hover {
+  border: 4px ridge aquamarine;
+}
+
+#logOut:hover {
+  color: hotpink;
+}
+
+
+#thread {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  background-color: #111111;
+  margin-bottom: 42px;
+  width: 100%;
+}
+
+.threadBox > p {
+  color: azure;
+}
+
+
+.threadHead {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.threadHead > p {
+  position: fixed;
+  top: 0;
+  left: 12px;
+  color: aquamarine
+}
+
+.partyHead {
+  position: fixed;
+  top: 18px;
+  left: 8px;
+  color: aquamarine;
+}
+
+.closeMess {
+  position: fixed;
+  top: 18px;
+  right: 12px;
+  color: hotpink;
+}
+
+.threadBox {
+  background-color: #111111;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  margin-top: 32px;
+  margin-bottom: 64px;
+}
+
+.threadMessage {
+  display: flex;
+  flex-direction: column;
+  margin: 6px;
+  padding: 8px;
+  border: 2px ridge #111;
+  border-radius: 4px;
+  width: 60%;
+  background-color: azure;
+} 
+
+.owned {
+  align-self: flex-end;
+}
+
+.messBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0;
+  border-top: 2px ridge aquamarine;
+  position: fixed;
+  bottom: 0;
+  background-color: azure;
+}
+
+#messageControl {
+  background-color: #111111;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#messageControl > input {
+  background-color: #111111;
+  color: azure;
+  border: 1px solid azure;
+  border-radius: 12px;
+  font-size: 18px;
+  padding: 6px;
+  width: 100%;
+}
+
+.autoExpand {
+  display: block;
+  min-height: 30px; /* Set a minimum height */
+  resize: none; /* Prevent manual resizing */
+  overflow: hidden; /* Hide overflow */
+}
+
+#messageControl > button {
+  background-color: #111111;
+  color: azure;
+  font-size: 18px;
+  border: 1px solid azure;
+  border-radius: 12px;
+  padding: 8px;
+  margin: 4px;
+}
+
+#messageControl > button:hover {
+  border-color: aquamarine;
+  color: aqua;
+}
+
+.author {
+  font-size: 12px;
+}
+
+.timestamp {
+  font-size: 10px;
+  align-self: flex-end;
+}
+
+#proHead {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: aquamarine;
+  padding: 0;
+}
+
+#userTag {
+  padding: 8px;
+  margin: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+#connectLink {
+  padding: 16px;
+  color: #111111;
+  font-weight: 600;
+  margin: 8px;
+  width: 69%;
+  text-align: center;
+  border-radius: 24px;
+}
+
+#connectLink:hover {
+  background-color: #111111;
+  color: azure;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 53px;
+  padding: 12px;
+}
+
+.footBar {
+  border-top: 2px ridge aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  margin: 0;
+  padding: 16px;
+  width: 100%;
+  background-color: #111;
+  color: aquamarine;
+}
+
+.footBar > a {
+  color: aquamarine;
+}
+
+#docs {
+  padding: 12px;
+}
+
+#docs > h1 {
+  font-size: 32px;
+}
+
+#docs > h2 {
+  font-size: 24px;
+}
+
+#docs > h3 {
+  font-size: 20px;
+}
+
+.homeLink {
+  padding: 12px;
+  color: #111111;
+}
+
+@media only screen and (max-width: 419px) {
+  .threadMessage {
+    width: 70%;
+  }
+
+  #proHead {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+@media only screen and (min-width: 420px) {
+ 
+  .threadMessage {
+    width: 40%;
+  }
+
+}

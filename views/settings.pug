@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  div.header
+    h2 #{user.username}
+  div#statusMenu
+    h3 Status
+    p.currentSetting #{user.status}
+    form(id='statusForm', action='#')
+      input(type='text', name='status', placeholder='Enter status')
+      button(type='submit') Save
+    h3 Bio  
+    p.currentSetting #{user.bio}
+    form(id='bioForm', action='#')
+      input(type='text', name='bio', placeholder='Enter bio')
+      button(type='submit') Save
+    h3 External Link
+    p.currentSetting #{user.link}
+    form(id='linkForm', action='#')
+      input(type='text', name='link', placeholder='Enter external link')
+      button(type='submit') Save
+    br  
+    a.cancel(href="/") Cancel
