@@ -2,7 +2,7 @@
 
 v0.0.9
 
-Live @[Glitch.com]()
+Live @[Glitch.com](https://comfortable-wide-geometry.glitch.me/)
 
 ## Overview
 
@@ -67,10 +67,20 @@ Server-hops:
 - Minimizes cost, keeps platform free
 - Makes things exciting! Users can race to snatch popular usernames at migration
 
+- [GitHub Repo](https://github.com/cursebreakers/messaging-app)
+
 *To contribute to this project:*
 - [send an email](mailto:hello@cursebreakers.net)
 
 ## Credits & Acknowledgements
+
+### Built with:
+
+- [Node.js](https://nodejs.org/en)
+- [NPM](https://www.npmjs.com/)
+- [Express](https://expressjs.com/)
+- [MongoDB](https://www.mongodb.com/)
+- [Glitch.com](https://glitch.com)
 
 ### Author
 
